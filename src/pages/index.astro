@@ -11,6 +11,53 @@
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<!-- Navbar -->
+		<nav class="navbar bg-base-100 fixed w-full top-0 left-0 shadow-md z-50">
+			<div class="flex-1">
+				<a class="btn btn-ghost text-xl">Horokko Loko</a>
+			</div>
+			<div class="flex-none">
+				<ul class="menu menu-horizontal px-1">
+					<li><a>Link</a></li>
+					<li>
+						<details>
+							<summary> Parent </summary>
+							<ul class="p-2 bg-base-100 rounded-t-none">
+								<li><a>Link 1</a></li>
+								<li><a>Link 2</a></li>
+							</ul>
+						</details>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!-- Main -->
+		<main class="w-screen h-screen pt-16 flex flex-row">
+			<!-- Save State Select -->
+			<div class="h-full w-20 grow-0 bg-yellow-400">
+
+			</div>
+			<!-- Asset Select -->
+			<div class="h-full w-72 grow-0 bg-green-400">
+
+			</div>
+
+			<!-- Model Preview -->
+			<div class="h-full grow bg-blue-400 flex flex-col">
+				<!-- Canvas Container -->
+				<div class="w-full grow bg-purple-400">
+
+				</div>
+				<!-- Controls -->
+				<div class="w-full grow-0 h-20 bg-pink-400">
+
+				</div>
+			</div>
+
+			<!-- Controlls -->
+			<div class="h-full w-40 grow-0 bg-red-400">
+
+			</div>
+		</main>
 	</body>
 </html>
