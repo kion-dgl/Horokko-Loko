@@ -1,31 +1,10 @@
-<div class="h-full w-72 grow-0 accent-content">
-    <div role="tablist" class="tabs tabs-lifted w-full tabs-lg">
-        <input
-            type="radio"
-            name="my_tabs_2"
-            role="tab"
-            class="tab"
-            aria-label="Tab 1"
-        />
-        <div role="tabpanel" class="tab-content bg-base-100">Tab content 1</div>
-
-        <input
-            type="radio"
-            name="my_tabs_2"
-            role="tab"
-            class="tab"
-            aria-label="Tab 2"
-            checked
-        />
-        <div role="tabpanel" class="tab-content bg-base-100">Tab content 2</div>
-
-        <input
-            type="radio"
-            name="my_tabs_2"
-            role="tab"
-            class="tab"
-            aria-label="Tab 3"
-        />
-        <div role="tabpanel" class="tab-content bg-base-100">Tab content 3</div>
+<div class="h-full w-72 grow-0 accent-content border-r-2 border-slate-600">
+    <div role="tablist" class="tabs tabs-bordered tabs-lg w-full">
+        <a class="tab tab-lg flex-grow" role="tab" aria-label="Tab 1">Tab 1</a>
+        <a class="tab tab-lg flex-grow tab-active" role="tab" aria-label="Tab 2">Tab 2</a>
+        <a class="tab tab-lg flex-grow" role="tab" aria-label="Tab 3">Tab 3</a>
     </div>
+    <div class="tab-content bg-base-100 p-4">Tab content 1</div>
+    <div class="tab-content bg-base-100 p-4">Tab content 2</div>
+    <div class="tab-content bg-base-100 p-4">Tab content 3</div>
 </div>

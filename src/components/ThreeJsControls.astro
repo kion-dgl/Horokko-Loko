@@ -1,0 +1,41 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<div class="absolute left-0 top-0 w-full z-10 p-4 flex items-center justify-between">
+    <!-- Select box for animations -->
+    <div class="flex space-x-2">
+        <select class="select select-bordered select-sm w-48">
+            <option disabled selected>Select an animation</option>
+            <option>Animation 1</option>
+            <option>Animation 2</option>
+            <option>Animation 3</option>
+        </select>
+        <button class="btn btn-sm btn-square btn-outline">
+            <Icon name="mdi:play" />
+        </button>
+        <button class="btn btn-sm btn-square btn-outline">
+            <Icon name="mdi:pause" />
+        </button>
+        <button class="btn btn-sm btn-square btn-outline">
+            <Icon name="mdi:stop" />
+        </button>
+    </div>
+
+    <!-- Progress bar for animation frame -->
+    <progress class="progress progress-primary w-56" value="30" max="100"
+    ></progress>
+
+    <!-- Control buttons -->
+    <div class="flex space-x-2">
+        <button class="btn btn-sm btn-outline">
+            <Icon name="mdi:camera-outline" /> Snapshot
+        </button>
+        <button class="btn btn-sm btn-outline">
+            <Icon name="mdi:camera-retake-outline" /> Reset Camera
+        </button>
+        <button class="btn btn-sm btn-outline">
+            <Icon name="mdi:download-outline" /> Export
+        </button>
+    </div>
+</div>

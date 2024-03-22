@@ -1,10 +1,11 @@
 ---
 import StateSelect from "@components/StateSelect.astro";
 import AssetSelect from "@components/AssetSelect.astro";
-import PreviewControls from "@components/PreviewControls.astro";
+import ThreeJsControls from "@components/ThreeJsControls.astro";
+import Counter from "@components/Counter.tsx";
 ---
 
-<html lang="en">
+<html lang="en" data-theme="retro">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -41,14 +42,11 @@ import PreviewControls from "@components/PreviewControls.astro";
 			<AssetSelect />
 
 			<!-- Model Preview -->
-			<div class="h-full grow bg-blue-400 flex flex-col">
+			<div class="h-full grow flex flex-col relative">
+				<ThreeJsControls />
 				<!-- Canvas Container -->
-				<div class="w-full grow bg-purple-400"></div>
-				<!-- Controls -->
-				<div class="w-full grow-0 h-20 bg-pink-400"></div>
+				<Counter />
 			</div>
-
-			<PreviewControls />
 		</main>
 	</body>
 </html>
