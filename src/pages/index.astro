@@ -2,6 +2,7 @@
 import StateSelect from "@components/StateSelect.astro";
 import AssetSelect from "@components/AssetSelect.astro";
 import ThreeJsControls from "@components/ThreeJsControls.astro";
+import AssetPreview from "@components/AssetPreview";
 ---
 
 <html lang="en" data-theme="retro">
@@ -44,7 +45,7 @@ import ThreeJsControls from "@components/ThreeJsControls.astro";
 			<div class="h-full grow flex flex-col relative">
 				<ThreeJsControls />
 				<!-- Canvas Container -->
-				
+				<AssetPreview client:only="react"/>
 			</div>
 		</main>
 	</body>

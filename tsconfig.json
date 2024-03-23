@@ -2,8 +2,8 @@
   "extends": "astro/tsconfigs/strictest",
   "compilerOptions": {
     "jsx": "react-jsx",
-    "jsxImportSource": "@builder.io/qwik",
-    "baseUrl": ".",
+    "jsxImportSource": "react",
+    "baseUrl": "/home/kion/GitHub/Horokko-Loko",
     "paths": {
       "@components/*": [
         "src/components/*"
