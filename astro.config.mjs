@@ -6,5 +6,7 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://dashgl.github.io',
+  base: '/horokko-loko',
   integrations: [tailwind(), icon(), react()]
 });
