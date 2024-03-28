@@ -1,5 +1,5 @@
 ---
-import { Icon } from "astro-icon/components";
+import SaveStateUploader from './SaveStateUploader.tsx'
 ---
 
 <aside class="drawer-side z-50 shadow">
@@ -18,9 +18,7 @@ import { Icon } from "astro-icon/components";
                     class="tooltip tooltip-bottom tooltip-info"
                     data-tip="Input"
                 >
-                    <button class="btn btn-square btn-ghost">
-                        <Icon name="mdi:plus" />
-                    </button>
+                    <SaveStateUploader client:only="react"/>
                 </div>
             </div>
         </div>
