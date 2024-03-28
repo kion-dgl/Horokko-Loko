@@ -3,10 +3,16 @@
   "compilerOptions": {
     "jsx": "react-jsx",
     "jsxImportSource": "react",
-    "baseUrl": "/home/kion/GitHub/Horokko-Loko",
+    "baseUrl": ".",
     "paths": {
       "@components/*": [
         "src/components/*"
+      ],
+      "@assets/*": [
+        "src/assets/*"
+      ],
+      "@layouts/*": [
+        "src/layouts/*"
       ]
     }
   }

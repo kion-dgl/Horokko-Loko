@@ -1,52 +1,20 @@
 ---
-import StateSelect from "@components/StateSelect.astro";
+import Default from "@layouts/Default.astro";
+import Navbar from "@components/Navbar.astro";
 import AssetSelect from "@components/AssetSelect.astro";
+import AssetPreview from "@components/AssetPreview.tsx";
 import ThreeJsControls from "@components/ThreeJsControls.astro";
-import AssetPreview from "@components/AssetPreview";
 ---
 
-<html lang="en" data-theme="retro">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
+<Default>
+	<main class="drawer-content flex flex-col h-screen">
 		<!-- Navbar -->
-		<nav
-			class="navbar bg-base-100 fixed w-full top-0 left-0 shadow-md z-50"
-		>
-			<div class="flex-1">
-				<a class="btn btn-ghost text-xl">Horokko Loko</a>
-			</div>
-			<div class="flex-none">
-				<ul class="menu menu-horizontal px-1">
-					<li><a>Link</a></li>
-					<li>
-						<details>
-							<summary> Parent </summary>
-							<ul class="p-2 bg-base-100 rounded-t-none">
-								<li><a>Link 1</a></li>
-								<li><a>Link 2</a></li>
-							</ul>
-						</details>
-					</li>
-				</ul>
-			</div>
-		</nav>
-		<!-- Main -->
-		<main class="w-screen h-screen pt-16 flex flex-row">
-			<StateSelect />
-			<AssetSelect />
-
-			<!-- Model Preview -->
-			<div class="h-full grow flex flex-col relative">
-				<ThreeJsControls />
-				<!-- Canvas Container -->
-				<AssetPreview client:only="react"/>
-			</div>
-		</main>
-	</body>
-</html>
+		<Navbar />
+		<!-- Content -->
+		<div class="flex-1 w-full relative">
+			<AssetPreview client:only="react" />
+			<ThreeJsControls />
+		</div>
+	</main>
+	<AssetSelect />
+</Default>
