@@ -17,20 +17,67 @@
         </button>
     </div>
     <div class="flex-1">
-        <a class="btn btn-ghost text-xl">Dashboard</a>
+        <div role="tablist" class="tabs tabs-boxed">
+            <a role="tab" class="tab tab-active">Entities</a>
+            <a role="tab" class="tab">Player</a>
+            <a role="tab" class="tab">Stage</a>
+          </div>
     </div>
     <div class="flex-none">
-        <ul class="menu menu-horizontal px-1">
-            <li><a>Link</a></li>
+        <ul class="menu menu-horizontal px-2">
             <li>
                 <details>
-                    <summary> Parent </summary>
+                    <summary> Theme </summary>
                     <ul class="p-2 bg-base-100 rounded-t-none">
-                        <li><a>Link 1</a></li>
-                        <li><a>Link 2</a></li>
+                        <li>
+                            <input
+                                type="radio"
+                                name="theme-dropdown"
+                                class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
+                                aria-label="Default"
+                                value="default"
+                            />
+                        </li>
+                        <li>
+                            <input
+                                type="radio"
+                                name="theme-dropdown"
+                                class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
+                                aria-label="Retro"
+                                value="retro"
+                            />
+                        </li>
+                        <li>
+                            <input
+                                type="radio"
+                                name="theme-dropdown"
+                                class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
+                                aria-label="Cyberpunk"
+                                value="cyberpunk"
+                            />
+                        </li>
+                        <li>
+                            <input
+                                type="radio"
+                                name="theme-dropdown"
+                                class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
+                                aria-label="Valentine"
+                                value="valentine"
+                            />
+                        </li>
+                        <li>
+                            <input
+                                type="radio"
+                                name="theme-dropdown"
+                                class="theme-controller btn btn-sm btn-block btn-ghost justify-start"
+                                aria-label="Aqua"
+                                value="aqua"
+                            />
+                        </li>
                     </ul>
                 </details>
             </li>
+            <li><a>GitHub</a></li>
         </ul>
     </div>
 </nav>
